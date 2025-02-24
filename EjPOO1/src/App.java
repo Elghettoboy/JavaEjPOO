@@ -1,15 +1,12 @@
-/*
-Crear un package llamado Models dentro de src.
-Crear una clase llamada Libro que contenga los siguientes atributos: ISBN, Título, Autor,
-Número de páginas, y un constructor con todos los atributos pasados por parámetro y un
-constructor vacío. 
-**Crear un método para cargar un libro pidiendo los datos al usuario y
-luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
-numero de páginas.
- */
+import java.util.Scanner;//libreria scanneer
+import Models.Libro;// importar el modelo
+public class App {// nombre de  la clase
+    public static void main(String[] args) throws Exception {// metodo principal
+        Libro lb = new Libro();// crear un objeto libro
 
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        lb.cargarLibro();// llamar metodo caragrlibro
+
+        lb.mostrarInformacion();// llamar metodomostarinformacion
     }
+        
 }
